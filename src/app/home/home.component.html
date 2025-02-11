@@ -1,0 +1,16 @@
+<div class="home">
+  <h1>JavaScript Tips & Tricks</h1>
+
+  <div class="tips-grid">
+    @for (tip of tips; track $index) {
+      <div
+        class="tip-card"
+        data-aos="fade-up"
+        [routerLink]="['/tips', tip.slug]"
+      >
+        <h2>{{ tip.title }}</h2>
+        <p>{{ tip.summary }}</p>
+      </div>
+    }
+  </div>
+</div>
